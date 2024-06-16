@@ -1,0 +1,122 @@
+/* 
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+  font-family: "Kumbh Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg), var(--Dark-cyan);
+
+  background-position: -50% 150%, 130% -120%;
+  font-weight: 400;
+}
+.card {
+  max-width: 50rem;
+  text-align: center;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.card-img-box {
+  position: relative;
+  margin-bottom: -1rem;
+}
+.card-content-box {
+  background-color: white;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+.card-content-box {
+  padding: 2rem 0;
+  padding-top: 7rem;
+}
+.card-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 0.2px solid rgba(128, 128, 128, 0.2);
+  padding: 2rem 0;
+}
+.card-name {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.card-age,
+.card-location {
+  color: var(--Dark-gray);
+}
+.card-age {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.card-location {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+.card-stat-number {
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 0.3rem;
+}
+.card-stat-type {
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+.card-stat-number {
+  font-size: 1.6rem;
+}
+.card-stat-type {
+  font-size: 1.2rem;
+}
