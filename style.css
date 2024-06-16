@@ -47,7 +47,7 @@ body {
   justify-content: center;
   background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg), var(--Dark-cyan);
-
+  background-repeat: no-repeat;
   background-position: -50% 150%, 130% -120%;
   font-weight: 400;
 }
